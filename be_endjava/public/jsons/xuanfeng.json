@@ -1,0 +1,22 @@
+{
+    "bar": "xuanfeng",
+    "pagination": {
+        "items": [
+            {
+                "title": "nhl",
+                "good": true,
+                "top": false,
+                "owner": "李扬",
+                "responseNum": 120
+            },
+            {
+                "title": "标题",
+                "good": false,
+                "top": "false",
+                "owner": "回帖",
+                "responseNum": 100
+            }
+        ]
+    },
+    "bollean": true
+}

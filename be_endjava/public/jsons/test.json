@@ -1,0 +1,23 @@
+{
+    "bar": "xieshuai",
+    "studentName": "aaaaaaaaaaa",
+    "userInfos": {
+        "items": [
+            {
+                "name": "xieshuai111111111",
+                "age": "21",
+                "sex": "female"
+            },
+            {
+                "name": "xieshuai2222222222",
+                "age": "21",
+                "sex": "female"
+            },
+            {
+                "name": "xieshuai333333333333",
+                "age": "21",
+                "sex": "female"
+            }
+        ]
+    }
+}
