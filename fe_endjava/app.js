@@ -22,7 +22,8 @@ app.use(express.logger('dev'));
 app.use(express.bodyParser());
 app.use(express.methodOverride());
 app.use(app.router);
-app.use(express.static(path.join(__dirname, 'public')));
+// app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'views')));  //静态文件路径
 
 // development only
 if ('development' == app.get('env')) {
@@ -47,6 +48,4 @@ http.createServer(app).listen(app.get('port'), function(){
 app.get('/', routes.getIndexPage);  //直接去routes目录下的index.js来搜索处理函数的名称
 // // app.get('/test', routes.test);
 app.get('/xuanfeng', routes.xuanfeng);
-app.get('/ajax', function(req, res){
-    res.send(true);
-});
+app.get('/ajax', routes.ajax);

@@ -3,10 +3,16 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-	<script src="/javascripts/jquery.js"></script>
-	<script src="/javascripts/public.js"></script>
+	<script src="js/jquery.js"></script>
+	<script src="js/public.js"></script>
 </head>
 <body>
+
+	<!-- 测试路径 -->
+	<%@ include file="include/index.jsp" %>
+
+	<!-- 测试图片 -->
+	<img src="images/Penguins.jpg" width="100" height="50" alt="">
 
 	<h1>测试endJava</h1>
 
@@ -49,7 +55,11 @@
 		</c:otherwise>	
 		
 	</c:choose>	
-	<!-- ajax end -->
+	
+	<!-- 测试ajax -->
+	<a  target="ifr" href="/ajax?bookInfoId=2013&bookInfoDetailsId=2012" title="点击删除" id="delete">点击删除</a>
+	<!-- <a target="ifr" href="/ajax" title="点击删除" id="delete">点击删除</a> -->
+
 
 </body>
 </html>

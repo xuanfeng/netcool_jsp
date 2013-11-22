@@ -80,3 +80,18 @@ exports.xuanfeng = function(req, res) {
         }
     });
 };
+
+
+exports.ajax = function(req, res) {
+    fs.readFile(jsonFolderPath + "ajax.json", "utf-8", function(err, data){
+        if(err != null){
+            console.log(err);
+            res.send("file ajax.json not found");
+        }
+        else{
+            res.render("ajax.jsp", JSON.parse(data), function(err, html){
+                res.send(html);
+            });
+        }
+    });
+};

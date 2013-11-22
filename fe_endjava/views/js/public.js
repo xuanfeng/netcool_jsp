@@ -1,9 +1,10 @@
 $(function(){
-	$("h1").click(function(){
+	$("#delete").click(function(){
+		var url = $(this).attr("href");
 		
 		$.ajax({
 			async: false,
-			url: "http://localhost:3001/haha?id=1",
+			url: url,
 			dataType: 'html',
 			type: 'get',
 			// data: {"courseAddress": courseAddress} ,
@@ -16,9 +17,11 @@ $(function(){
 			     }
 		   	},
 			success: function(json){
-				alert(json)
+				$("#delete").after(json);
 			}		
 		});
+
+		return false;
 		
 	});
 })
