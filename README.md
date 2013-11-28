@@ -94,53 +94,61 @@ Endjava项目
 
 ###标签使用
 列出的标签为项目已解析的标签，文件路径请查看下一节endskin.js，可自行扩展
+
 - Include： 引入其他页面
 
-<%@ include file="../../include/taglib.jsp" %>
+        <%@ include file="../../include/taglib.jsp" %>
+
 
 - Shiro： 用户权限管理
 
-<shiro:guest>游客</shiro:guest>
-
-- duobei:script：用于加载js
-
-<duobei:script type="text/javascript" src="less-1.3.0.min.js" charset="utf-8"/>
+        <shiro:guest>游客</shiro:guest>
 
 - c:set：定义变量
 
-<c:set value="this is andy" var="oneString"/>     ${oneString}
+        <c:set value="this is andy" var="oneString"/>     ${oneString}
 
 - c:forEach：循环语句
 
-<c:forEach items="${sessionScope.arrayList}" var="arrayListI">${arrayListI}</c:forEach>
-<c:forEach var="i" begin="1" end="10" step="1">${i}<br /></c:forEach>
+        <c:forEach items="${sessionScope.arrayList}" var="arrayListI">
+        ${arrayListI}
+        </c:forEach>
+        <c:forEach var="i" begin="1" end="10" step="1">
+            ${i}<br />
+        </c:forEach>
 
 - c:if：条件判断
 
-<c:if test="${paramValues.sampleValue[2] == 12}" var="visits">It is 12</c:if>
+        <c:if test="${paramValues.sampleValue[2] == 12}" var="visits">It is 12</c:if>
 
 - c:when：复杂判断，等价于if
 
-<c:when test="${paramValues.sampleValue[2] == 11}">not 12 not 13,it is 11</c:when>
-c:otherwise：复杂判断，等价于else
+        <c:when test="${paramValues.sampleValue[2] == 11}">
+            not 12 not 13,it is 11
+        </c:when>
 
-- <c:otherwise>not 11 、12、13</c:otherwise>
+- c:otherwise：复杂判断，等价于else
 
-c:shoose： <c:choose>标签没有属性，可被认为是父标签，<c:when>、<c:otherwise>作为其子标签来使用
-    <c:choose>
-         <c:when test="${paramValues.sampleValue[2] == 11}">
-                   not 12 not 13,it is 11
-         </c:when>
-         <c:when test="${paramValues.sampleValue[2] == 12}">
-                   not 11 not 13,it is 12
-         </c:when>
-         <c:when test="${paramValues.sampleValue[2] == 13}">
-                   not 11 not 12,it is 13
-         </c:when>
-         <c:otherwise>
-                   not 11 、12、13
-         </c:otherwise>
-</c:choose>
+        <c:otherwise>not 11 、12、13</c:otherwise>
+
+
+- c:choose：&lt;c:choose>标签没有属性，可被认为是父标签，&lt;c:when>、&lt;c:otherwise>作为其子标签来使用
+  
+        <c:choose>
+            <c:when test="${paramValues.sampleValue[2] == 11}">
+        not 12 not 13,it is 11
+    </c:when>
+    <c:when test="${paramValues.sampleValue[2] == 12}">
+                not 11 not 13,it is 12
+            </c:when>
+            <c:when test="${paramValues.sampleValue[2] == 13}">
+                not 11 not 12,it is 13
+            </c:when>
+            <c:otherwise>
+                not 11 、12、13
+            </c:otherwise>
+        </c:choose>
+
 支持大部分的jstl标签，可根据需求自行扩展
 
 -------------------------------------------------
@@ -156,7 +164,9 @@ fe_endjava\node_modules\endskin\endskin.js：为解析规则代码，基本都�
 ###要注意的写法
 
 - 先将文件删除注释及其他没用信息。——已解决
+
 - shiro问题，如何在endjava中使用？——已解决
+
 - cif、cchoose、cwhen中判断逻辑带与、或等，解析问题——基本解决
     - 以下test、test1表示变量
     - 不要使用empty，改用test != null && test != ''
@@ -166,7 +176,9 @@ fe_endjava\node_modules\endskin\endskin.js：为解析规则代码，基本都�
     - 不要在判断的${}中写括号() 
 
 - cforeach各种复杂功能解析——基本解决
+
 - 完善cset——已解决
+
 - 需要验证是否支持${num-1}
 
 
