@@ -136,9 +136,9 @@ Endjava项目
   
         <c:choose>
             <c:when test="${paramValues.sampleValue[2] == 11}">
-        not 12 not 13,it is 11
-    </c:when>
-    <c:when test="${paramValues.sampleValue[2] == 12}">
+                not 12 not 13,it is 11
+            </c:when>
+            <c:when test="${paramValues.sampleValue[2] == 12}">
                 not 11 not 13,it is 12
             </c:when>
             <c:when test="${paramValues.sampleValue[2] == 13}">
