@@ -4,41 +4,41 @@ Endjava项目
 
 ###Github地址
 
-1.	版本一：https://github.com/xuanfeng/netcool_jsp
-2.	版本二：https://github.com/louiseliu/endjava
-3.	版本三：https://github.com/sqxieshuai/endJava_fe_be
+1.  版本一：https://github.com/xuanfeng/netcool_jsp（整合版）
+2.  版本二：https://github.com/louiseliu/endjava（维护版）
+3.  版本三：https://github.com/sqxieshuai/endJava_fe_be（初版）
 
 -----------------------------------------
 
 ###环境搭建安装
 
-1.	安装nodejs：http://nodejs.org/
-2.	安装git bash：http://msysgit.github.io/（安装时有个打钩的选项记得勾选，可以右键快捷运行，鼠标右键增加Git Bash Here表示成功）
-3.	在以上版本中（推荐版本一），点击复制右侧的HTTPS clone URL
-4.	选择存放文件夹，鼠标右键点击Git Bash Here（即可在当前路径进行操作，否则还要进行打开磁盘的一系列操作）
-    -	输入git clone 
-    -	在git bash软件窗口顶部右键->编辑->粘贴，将刚才复制的github项目地址粘贴
-    -	Enter运行
-    -	开始从github下载项目，等待下载完成
+1.  安装nodejs：http://nodejs.org/
+2.  安装git bash：http://msysgit.github.io/（安装时有个打钩的选项记得勾选，可以右键快捷运行，鼠标右键增加Git Bash Here表示成功）
+3.  在以上版本中（推荐版本一），点击复制右侧的HTTPS clone URL
+4.  选择存放文件夹，鼠标右键点击Git Bash Here（即可在当前路径进行操作，否则还要进行打开磁盘的一系列操作）
+    -   输入git clone 
+    -   在git bash软件窗口顶部右键->编辑->粘贴，将刚才复制的github项目地址粘贴
+    -   Enter运行
+    -   开始从github下载项目，等待下载完成
 
 ----------------------------------------------
 
 ###项目结构解析
-- **be_endjava**：用于json文件的新建，获取，编辑，即相当于后台
-- **fe_endjava**：用于jsp页面解析，相当于前端本地开发
+- be_endjava：用于json文件的新建，获取，编辑，即相当于后台
+- fe_endjava：用于jsp页面解析，相当于前端本地开发
 
 -------------------------------------------------
 
 ###开发流程
-1.	在fe_endjava目录下新建`views`和`public`文件夹
+1.  在fe_endjava目录下新建`views`和`public`文件夹
     - Views：用于存放jsp文件
     - public：用于存放styles,javascript,images的文件夹
     - 项目启动：进入项目根路径，node app.js启动即可
-2.	app.js
+2.  app.js
     -   指定请求处理函数
         - app.get('/', routes.getIndexPage);       //表示请求首页
         - app.get('/xuanfeng', routes.xuanfeng);   //表示请求某个页面
-3.	routes/index.js
+3.  routes/index.js
     - 开发app.js中定义的函数，处理相应的请求
         - //返回首页，此模板为静态页，不可包含jsp标签
         <pre>
@@ -64,7 +64,7 @@ Endjava项目
             });
         };
         </pre>
-4.	项目预览
+4.  项目预览
     - 后台json数据编写：启动项目后，输入http://localhost:3000/
     - 前端预览页面：http://localhost:3001/，相应的请求直接在后面添加
 
@@ -85,10 +85,10 @@ Endjava项目
 --------------------------------------------
 
 ###前后端合作（关键字约定）
-1.	先前端作图（设计稿or草图）
-2.	开会时用markman软件在图上标记好关键字
-3.	会议后分享图片，前后端均用这个关键字
-4.	附markman分享： 文章
+1.  先前端作图（设计稿or草图）
+2.  开会时用markman软件在图上标记好关键字
+3.  会议后分享图片，前后端均用这个关键字
+4.  附markman分享： 文章
 
 ------------------------------------------
 
