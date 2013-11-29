@@ -4,16 +4,16 @@ Endjava项目
 
 ###Github地址
 
-1.  版本一：https://github.com/xuanfeng/netcool_jsp（整合版）
-2.  版本二：https://github.com/louiseliu/endjava（维护版）
-3.  版本三：https://github.com/sqxieshuai/endJava_fe_be（初版）
+1.  版本一：https://github.com/xuanfeng/netcool_jsp  （整合版）
+2.  版本二：https://github.com/louiseliu/endjava  （维护版）
+3.  版本三：https://github.com/sqxieshuai/endJava_fe_be  （初版）
 
 -----------------------------------------
 
 ###环境搭建安装
 
 1.  安装nodejs：http://nodejs.org/
-2.  安装git bash：http://msysgit.github.io/（安装时有个打钩的选项记得勾选，可以右键快捷运行，鼠标右键增加Git Bash Here表示成功）
+2.  安装git bash：http://msysgit.github.io/  （安装时有个打钩的选项记得勾选，可以右键快捷运行，鼠标右键增加Git Bash Here表示成功）
 3.  在以上版本中（推荐版本一），点击复制右侧的HTTPS clone URL
 4.  选择存放文件夹，鼠标右键点击Git Bash Here（即可在当前路径进行操作，否则还要进行打开磁盘的一系列操作）
     -   输入git clone 
